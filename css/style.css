@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+:root
+    {
+        --branco-principal: #FFFFFF;
+        --branco-secundario: #F9F9F9;
+        --preto-background: #00030C;
+        --vermelho-logo: #EC2F46;
+        --cor-rodape: #C0C0C0;
+        --cor-botao: #167BF7;
+        --botao-azul-efeito: #569ef6;
+        
+
+        --fonte-principal: 'Inter';
+    }
+
+body
+    {
+        background-color: var(--preto-background);
+        font-family: var(--fonte-principal);
+        color: var(--branco-principal);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+.principal
+    {
+        background-image: url('../assets/Background-aluraplus.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-items: center;
+        text-align: center;
+    }
+
+.container
+    {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+.coitainer-botao
+    {
+        text-decoration: none;
+        color: var(--branco-principal);
+        background-color: var(--cor-botao);   
+        border-radius: 8px;
+        padding: 1em;
+        display: block; 
+        margin-bottom: 1em;
+    }
+
+.container-aviso
+    {
+        color: var(--branco-secundario);
+        font-size: 12px;
+    }
+
+.botao-secundario
+    {
+        background-color: transparent;
+        color: var(--branco-principal);
+        text-decoration: none;
+        border: 2px solid var(--branco-principal);
+        border-radius: 8px;
+        padding: 1em;
+        display: block;
+    }
+
+.container-titulo
+    {
+        color: var(--branco-principal);
+        font-size: 28px;
+        text-align: center;
+        font-family: 'Inter';
+        font-weight: 700;    
+    }
+
+.container-imagem
+    {
+        margin: 1em 0 2em 0;
+        height: 10vh;
+    }
+
+.container-caixa
+    {
+        margin: 0 6em;
+    }
+
+.secundario-imagem
+    {
+        width: 80%;
+    }
+
+.secundario
+    {
+        align-items: center;
+        margin: 0 10em;
+    }
+
+.descricao-titulo
+    {
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--branco-principal);
+        margin-bottom: 0.1em;
+        
+    }
+
+.descricao-texto
+    {
+        color: var(--branco-secundario);
+        font-size: 16px;
+    }
+
+.secundario-botao
+    {
+        text-decoration: none;
+        color: var(--branco-principal);
+        background-color: var(--cor-botao);   
+        border-radius: 8px;
+        padding: 1em;
+        margin-bottom: 1em;
+        display: inline-block;
+        margin-top: 1em;
+    }
+
+.container-descricao
+    {
+        padding: 2em;
+    }
+
+.dispositivos
+    {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.dispositivos-lista
+    {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+.dispositivos
+    {
+        text-align: center;
+    }
+
+.dispositivos-titulo
+    {
+        font-size: 48px;
+        color: var(--branco-principal);
+    }
+
+.lista-item
+    {
+        font-size: 32px;
+        color: var(--branco-principal);
+        margin: 5em 0;
+    }
+
+.lista-imagem
+    {
+        max-height: 25%;
+        row-gap: 5%;
+        
+    }
+
+.rodape-texto
+    {   
+        text-align: justify;
+        justify-content: center;
+        color: var(--branco-secundario);
+    }
+
+.lista-link
+    {
+        text-decoration: none;
+        color: var(--branco-secundario);
+        list-style-type: none;
+    }
+
+.rodape-logo
+    {
+        justify-content: center;
+        align-items: center;
+        margin-left: 50%;
+    }
+
+.lista-rodape
+    {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 1em;
+        
+        text-decoration: none;
+        gap: 1em;
+        text-align: justify;
+        color: var(--branco-secundario); 
+    }
+
+.link
+    {
+        text-decoration: none;
+        color: var(--branco-secundario);
+    }
+
+.lista-link a:hover {color: var(--cor-botao)}  
+
+.lista-link a:active {color: var(--botao-azul-efeito);}
+
+.coitainer-botao:hover 
+    {
+        background-color: var(--cor-botao);
+        color: var(--preto-background);
+    }
+
+.secundario-botao:hover
+    {
+        background-color: var(--cor-botao);
+        color: var(--preto-background);
+    }
+
