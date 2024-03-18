@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+    /* Definindo variáveis de fontes e cores */
+:root
+    {
+        /* cores */
+        --branco-principal: #FFFFFF;
+        --branco-secundario: #F9F9F9;
+        --preto-background: #00030C;
+        --vermelho-logo: #EC2F46;
+        --cor-rodape: #C0C0C0;
+        --cor-botao: #167BF7;
+        --botao-azul-efeito: #569ef6;
+        
+
+        /* fonte */
+        --fonte-principal: 'Inter';
+    }
+
+    /* corpo do site | definição de cor de fundo, fonte e tamanho, cor de texto  */
+body
+    {
+        background-color: var(--preto-background);
+        font-family: var(--fonte-principal);
+        color: var(--branco-principal);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    /* formatação de plano de fundo com imagem de instrutores */
+.principal
+    {
+        background-image: url('../assets/Background-aluraplus.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* dividindo tela do site em duas colunas iguais */
+.container
+    {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    /* formatação do primeiro botão do site */
+.container-botao
+    {
+        text-decoration: none;
+        color: var(--branco-principal);
+        background-color: var(--cor-botao);   
+        border-radius: 8px;
+        padding: 1em;
+        display: block; 
+        margin-bottom: 1em;
+        height: 1em;
+        font-size: 1em;
+    }
+
+    /* formatação do segundo botão do site */
+.botao-secundario
+    {
+        background-color: transparent;
+        color: var(--branco-principal);
+        text-decoration: none;
+        border: 2px solid var(--branco-principal);
+        border-radius: 8px;
+        padding: 1em;
+        display: block;
+        height: 1em;
+        font-size: 1em;
+    }
+
+    /* formatação texto letras miúdas */
+.container-aviso
+    {   
+        color: var(--branco-secundario);
+        font-size: 0.8em;
+    }
+
+    /* formatação título */
+.container-titulo
+    {
+        color: var(--branco-principal);
+        font-size: 1.75em;
+        text-align: center;
+        font-family: 'Inter';
+        font-weight: 700;    
+    }
+
+    /* formatação imagem */
+.container-imagem
+    {
+        margin: 1em 0 2em 0;
+        height: 10vh;
+    }
+
+    /* formatação div inicial assinatura com botões */
+.container-caixa
+    {
+        margin: 0 6em;
+    }
+
+    /* formatação imagens notebook, celular e telas*/
+.secundario-imagem
+    {
+        width: 80%;
+    }
+
+    /* formatação container secundario (utilizado em 3 sections) */
+.secundario
+    {
+        align-items: center;
+        margin: 0 6em;
+    }
+
+    /* formatação de imagem notebook */
+.notebook
+    {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    /* formatação título combo+ */
+.descricao-titulo
+    {
+        font-size: 3em;
+        font-weight: 700;
+        color: var(--branco-principal);
+        margin-bottom: 0.1em;
+        
+    }
+
+    /* formatação texto combo+ */
+.descricao-texto
+    {
+        color: var(--branco-secundario);
+        font-size: 1em;
+    }
+
+    /* formatação botao assinar combo+ */
+.secundario-botao
+{
+    text-decoration: none;
+    color: var(--branco-principal);
+    background-color: var(--cor-botao);   
+    border-radius: 8px;
+    padding: 1em;
+    font-size: 1em;
+    width: 9em;
+}
+
+    /* formatação divs dos containers */
+.container-descricao
+    {
+        padding: 2em;
+        margin-bottom: 1em;
+    }
+
+    /* formatação section dos dispositivos */
+.dispositivos
+    {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* alinhando dispositivos centro */
+.dispositivos-lista
+    {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    /* alinhando dispositivos centro */
+.dispositivos
+    {
+        text-align: center;
+    }
+
+    /* alinhando título dispositivos */
+.dispositivos-titulo
+    {
+        font-size: 3em;
+        color: var(--branco-principal);
+    }
+
+    /* formatação título h3 lista dispositivos */
+.lista-item
+    {
+        font-size: 2em;
+        color: var(--branco-principal);
+        margin: 5em 0;
+    }
+
+    /* formatação img lista dispositivos */
+.lista-imagem
+    {
+        max-height: 25%;
+        row-gap: 1em;
+        
+    }
+
+    /* formatação logo alura+ */
+.rodape-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    /* formatação texto rodapé */
+.rodape-texto
+    {   
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: var(--branco-secundario);
+        font-size: 1em;
+    }
+
+    /* formatação de link do rodape */
+.lista-link
+    {
+        text-decoration: none;
+        color: var(--branco-secundario);
+        list-style-type: none;
+    }
+
+
+    /* formatação de link do rodape */
+.lista-rodape
+    {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 1em;
+        text-decoration: none;
+        gap: 1em;
+        text-align: justify;
+        color: var(--branco-secundario); 
+    }
+
+    /* formatação de link do rodape */
+.link
+    {
+        text-decoration: none;
+        color: var(--branco-secundario);
+    }
+
+.combo
+    {
+    transition: 2s;
+    }
+    
+.combo:hover 
+    {
+        transition: 2s;
+        transform: scale(1.1);
+    }
+
+    /* formatação pousar o mouse em link */
+.lista-link a:hover 
+    {
+        color: var(--cor-botao)
+    }  
+
+    /* formatação clicar com mouse em link */
+.lista-link a:active 
+    {
+        color: var(--botao-azul-efeito);
+    }
+
+    /* formatação pousar o mouse no primeiro botao */
+.container-botao:hover 
+    {
+        background-color: transparent;
+        color: var(--branco-principal);
+        text-decoration: none;
+        border: 2px solid var(--branco-principal);
+        border-radius: 8px;
+    }
+
+    /* formatação pousar o mouse no segundo botao */
+.botao-secundario:hover
+    {
+        background-color: var(--cor-botao);
+        color: var(--branco-principal);
+    }
+
+.secundario-botao:hover
+    {
+        background-color: transparent;
+        color: var(--branco-principal);
+        text-decoration: none;
+        border: 2px solid var(--branco-principal);
+        border-radius: 8px;
+    }
+    /* transição de volta do hover ao tirar mouse de cima */
+.lista-imagem
+    {
+    transition: 2s;
+    }
+    
+    /* transição ao pousar mouse */
+.lista-imagem:hover 
+    {
+        transition: 2s;
+        transform: scale(1.35);
+    }
+
+.notebook
+    {
+    transition: 2s;
+    }
+    
+.notebook:hover 
+    {
+        transition: 2s;
+        transform: scale(1.1);
+    }
+
+.secundario-imagem
+    {
+        transition: 2s;  
+    }
+
+.secundario-imagem:hover
+    {
+        transition: 2s;
+        transform: scale(1.1);
+    }
+    
+.link
+    {
+        transition: 1.3s;
+    }
+
+.link:hover
+    {
+        transition: 1.3s;
+        font-size: 1.15em;
+    }
+
+@media screen and (max-width: 1024px) /* Tornando o site responsivo com @media screen para telas menores que 1024px */
+{
+    .container 
+    {
+        display: block;
+        background-image: none;
+    }
+    
+    .container-imagem 
+    {
+        width: 45vw; /* 50% da largura da viewport */
+        height: 20vh; /* 30% da altura da viewport */
+    }
+
+    .container-botao
+    {
+        font-size: 1.5em;
+        height: 1.5em;
+        width: 1.5;
+    }
+
+    .botao-secundario
+    {
+        font-size: 1.5em;
+        height: 1.5em;
+        width: 1.5;
+    }   
+   
+    .secundario-botao
+    {
+        font-size: 1.5em;
+        height: 1.5em;
+        width: 1.5;
+    }
+
+    .descricao-texto
+    {
+        font-size: 1.5em;
+    }
+
+    .container-aviso
+    {
+        font-size: 1em;
+    }
+
+    .container-caixa 
+    {
+        margin: 2em 2em;
+    }
+
+    .secundario 
+    {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario-imagem 
+    {
+        width: 50vw;
+    }
+
+    .dispositivos-lista 
+    {
+        display: block;
+    }
+
+    .lista-imagem 
+    {
+        width: 80vw;
+    }
+
+    .lista-rodape 
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .container-titulo
+    {
+        display: flex;
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 768px) /* Tornando o site responsivo com @media screen para telas menores que 768px */
+{
+    .container 
+    {
+        display: block;
+        background-image: none;
+    }
+    
+    .container-imagem 
+    {
+        width: 30vw; /* 30% da largura da viewport */
+        height: 10vh; /* 15% da altura da viewport */
+    }
+
+    .container-caixa 
+    {
+        margin: 1em 1em;
+    }
+
+    .secundario 
+    {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario-imagem 
+    {
+        width: 50vw;
+    }
+
+    .dispositivos-lista 
+    {
+        display: block;
+    }
+
+    .lista-imagem 
+    {
+        width: 50vw;
+    }
+
+    .lista-rodape 
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .container-aviso
+    {
+        font-size: 0.7em;
+    }
+    
+    .descricao-texto
+    {
+        font-size: 1em;
+    }
+
+    .dispositivos-lista
+    {
+        line-height: 1;
+        row-gap: none;
+    }
+
+    .dispositivos-titulo
+    {
+        font-size: 2em;
+    }
+
+    .lista-item
+    {
+        font-size: 0.7em;
+    }
+
+    .lista-item
+    {
+        font-size: 1em;
+    }
+
+    .rodape-logo
+    {
+        align-items: center;
+    }
+}
+    @media screen and (max-width: 400px) /* Tornando o site responsivo com @media screen para telas menores que 400px*/   
+    {
+        .descricao-titulo
+        {
+            font-size: 1.5em;
+        }
+
+        .dispositivos-titulo
+        {
+            font-size: 1.1em;
+        }
+
+        .container-botao
+        {
+            font-size: 0.8em;
+        }
+
+        .container-imagem
+        {
+            height: 30vw;
+            width: 30vh;
+        }
+
+        .botao-secundario
+        {
+            font-size: 0.8em;
+        }
+        
+        .container-aviso
+        {
+            font-size: 0.6em;
+            color: var(--branco-secundario);
+        }
+
+        .lista-item
+        {
+            font-size: 1em;
+        }
+
+        .rodape
+        {
+            font-size: 0.7em;
+        }
+
+
+    }
